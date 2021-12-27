@@ -558,6 +558,7 @@ a {
   .up,
   .down {
 	  display: none;
+	  cursor: pointer;
   }
   .close {
 	  font-size: 24px;
@@ -659,11 +660,13 @@ a {
 	.left,
 	.right {
 		display: none;
+		cursor: pointer;
 	}
 	.up,
 	.down {
 		text-align: center;
 		display: block;
+		cursor: pointer;
 	}
 	.introduce__list {
 		flex-wrap: wrap;
