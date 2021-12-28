@@ -12,12 +12,14 @@ var bar = document.querySelector('.header__mobile');
         menu.style.visibility = 'hidden';
         menu.style.transform = 'translateX(-100%)';
         menu.style.opacity = 0;
+        menu.style.transition = '0.8s';
         overlay.style.visibility = 'hidden';
     })
     overlay.addEventListener('click', function(){
+        menu.style.visibility = 'hidden';
         menu.style.transform = 'translateX(-100%)';
         menu.style.opacity = 0;
-        menu.style.visibility = 'hidden';
+        menu.style.transition = '0.8s';
         overlay.style.visibility = 'hidden';
 })
 
