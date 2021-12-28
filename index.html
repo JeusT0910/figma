@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="menu">
@@ -19,19 +20,89 @@
                 <a href="" class="menu__link">Liberty 3 Pro <img src="./assets/img/Frame1.png" alt="" style="position: absolute;top:22%;right:36%"></a>
             </li>
             <li class="menu__item">
-                <a href="" class="menu__link">Headphone <i class="fas fa-chevron-down"></i></a>
+                <a  class="menu__link">Headphone <i class="fas fa-chevron-down" onclick="hienthi(1,`menu-children-1`)"></i></a>
+                <ul class="menu__child--mobile-list dp-none" id="menu-children-1">
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu__item">
-                <a href="" class="menu__link">Speakers <i class="fas fa-chevron-down"></i></a>
+                <a class="menu__link">Speakers <i class="fas fa-chevron-down" onclick="hienthi(2,`menu-children-2`)"></i></a>
+                <ul class="menu__child--mobile-list dp-none" id="menu-children-2">
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu__item">
-                <a href="" class="menu__link">Soundcore Frame <i class="fas fa-chevron-down"></i></a>
+                <a  class="menu__link">Soundcore Frame <i class="fas fa-chevron-down" onclick="hienthi(3,`menu-children-3`)"></i></a>
+                <ul class="menu__child--mobile-list dp-none" id="menu-children-3">
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu__item">
-                <a href="" class="menu__link">Support <i class="fas fa-chevron-down"></i></a>
+                <a class="menu__link">Support <i class="fas fa-chevron-down" onclick="hienthi(4,`menu-children-4`)"></i></a>
+                <ul class="menu__child--mobile-list dp-none" id="menu-children-4">
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu__item">
-                <a href="" class="menu__link">Social <i class="fas fa-chevron-down"></i></a>
+                <a class="menu__link">Social <i class="fas fa-chevron-down" onclick="hienthi(5,`menu-children-5`)"></i></a>
+                <ul class="menu__child--mobile-list dp-none" id="menu-children-5">
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                    <li class="menu__child--mobile-item">
+                        <a href="" class="menu__child--mobile-link">Demo menu</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu__item">
                 <a href="" class="menu__link">About us</a>
@@ -44,7 +115,9 @@
     <header class="header">
         
         <div class="header__logo">
-            <img src="./assets/img/logo.jpg" alt="">
+           <a href="">
+                <img src="./assets/img/logo.jpg" alt="">
+           </a>
         </div>
         <div class="header__menu">
             <ul class="header__menu--list">
@@ -53,18 +126,88 @@
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">Headphone <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu__child--list">
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">Speakers <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu__child--list">
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">Soundcore Frame <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu__child--list">
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">Support <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu__child--list">
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">Social <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu__child--list">
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                        <li class="menu__child--item">
+                            <a href="" class="menu__child--link">Demo menu</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__menu--item">
                     <a href="" class="header__menu--link">About us</a>
@@ -72,7 +215,6 @@
             </ul>
         </div>
         <div class="header__search">
-            
             <i class="fas fa-search" style="cursor: pointer;"></i>
             <img src="./assets/img/states.png" alt="" style="cursor: pointer;">
             <div class="header__mobile">
@@ -82,48 +224,86 @@
     </header>
     <div class="rectangle">
         <ul class="rectangle__list">
-            <li class="rectangle__item">
-                <img src="./assets/img/Frame2.png" alt="">
-                <span>Fast, Free Shipping</span>
-            </li>
-            <li class="rectangle__item">
-                <img src="" alt="">
-                <span>30-Day Money-Back Guarantee</span>
-            </li>
-            <li class="rectangle__item">
-                <img src="./assets/img/Frame4.png" alt="">
-                <span>18-Month Hassle-Free Warranty</span>
-            </li>
-            <li class="rectangle__item">
-                <img src="./assets/img/Frame5.png" alt="">
-                <span>Lifetime Customer Support</span>
-            </li>
+            <a href="">
+                <li class="rectangle__item">
+                    <img src="./assets/img/Frame2.png" alt="">
+                    <span>Fast, Free Shipping</span>
+                </li>
+            </a>
+            <a href="">
+                <li class="rectangle__item">
+                    <img src="" alt="">
+                    <span>30-Day Money-Back Guarantee</span>
+                </li>
+            </a>
+            <a href="">
+                <li class="rectangle__item">
+                    <img src="./assets/img/Frame4.png" alt="">
+                    <span>18-Month Hassle-Free Warranty</span>
+                </li>
+            </a>
+            <a href="">
+                <li class="rectangle__item">
+                    <img src="./assets/img/Frame5.png" alt="">
+                    <span>Lifetime Customer Support</span>
+                </li>
+            </a>
         </ul>
     </div>
-    <div class="slideshow">
-        <img class="" src="./assets/img/homepage.png"> 
+    <div class="slideshow-container">
+        <div class="slideshow fade">
+            <img class="" src="./assets/img/homepage.png"></img>
             <div class="slideshow__content">
                 <h3 class="slideshow__heading">Soundcore Frame</h3>
                 <h3 class="slideshow__title">Reframe Your Sound</h3>
                 <h5 class="slideshow__desc">Audio glasses with interchangeable frames andsurround sound</h5>
                 <a href="" class="slideshow__btn btn btn-primary ">Buy now</a>
             </div>
-        </img>
+        </div>
+        <div class="slideshow fade">
+            <img class="" src="./assets/img/aa.png"></img>
+            <div class="slideshow__content">
+                <h3 class="slideshow__heading">Soundcore Frame</h3>
+                <h3 class="slideshow__title">Reframe Your Sound</h3>
+                <h5 class="slideshow__desc">Audio glasses with interchangeable frames andsurround sound</h5>
+                <a href="" class="slideshow__btn btn btn-primary ">Buy now</a>
+            </div>
+        </div>
+        <div class="slideshow fade">
+            <img class="" src="./assets/img/bb.jpg"></img>
+            <div class="slideshow__content">
+                <h3 class="slideshow__heading">Soundcore Frame</h3>
+                <h3 class="slideshow__title">Reframe Your Sound</h3>
+                <h5 class="slideshow__desc">Audio glasses with interchangeable frames andsurround sound</h5>
+                <a href="" class="slideshow__btn btn btn-primary ">Buy now</a>
+            </div>
+        </div>
+    </div>
+    <div style="display:none;">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
     </div>
     <div class="achievements">
         <ul class="achievements__list">
-            <li class="achievements__item">
-                <img src="./assets/img/1.png" alt="">
-                <h4>Incredible sound loved by <span style="color: #00A9E1">20 million+</span> people.</h4>
-            </li>
-            <li class="achievements__item">
-                <img src="./assets/img/2.png" alt="">
-                <h4>World-leading audio technologies, including SweatGuard, BassUp, ACAA, and HearID.</h4>
-            </li>
-            <li class="achievements__item">
-                <img src="./assets/img/3.png" alt="">
-                <h4>Recommended by 10 GRAMMY-winning artists, 20 GRAMMY-winning audio producers, and numerous media outlets and Influencers.</h4>
-            </li>
+            <a href="">
+                <li class="achievements__item">
+                    <img src="./assets/img/1.png" alt="">
+                    <h4>Incredible sound loved by <span style="color: #00A9E1">20 million+</span> people.</h4>
+                </li>
+            </a>
+            <a href="">
+                <li class="achievements__item">
+                    <img src="./assets/img/2.png" alt="">
+                    <h4>World-leading audio technologies, including SweatGuard, BassUp, ACAA, and HearID.</h4>
+                </li>
+            </a>
+            <a href="">
+                <li class="achievements__item">
+                    <img src="./assets/img/3.png" alt="">
+                    <h4>Recommended by 10 GRAMMY-winning artists, 20 GRAMMY-winning audio producers, and numerous media outlets and Influencers.</h4>
+                </li>
+            </a>
         </ul>
     </div>
     <div class="new">
@@ -138,7 +318,7 @@
                             Sound Loved B GRAMMY Winners
                         </h4>
                         <h4 class="new__item--desc-1" style="color: #F4D473; font-size: 18px;width: 320px;margin-bottom: 30px;line-height: 25px;">Our earbuds are endorsed by GRAMMY Winning artists and audio producers.</h4>
-                        <a href="" class="new__item--title btn">Learn more</a>
+                        <a href="" class="new__item--btn btn">Learn more</a>
                     </div>
                 </div>
             </li>
@@ -146,22 +326,22 @@
                 <div class="new__item-2">
                     <div class="new__item--img" style="background: url(./assets/img/5.png);width: 365px; height: 365px;object-fit: cover; ">
                         <div class="new__item--content">
-                            <h5 class="new__item--title" style="color: #fff">
+                            <h5 class="new__item--title" >
                                 IPx7 waterproof
                             </h5>
                             <h4 class="new__item--desc" style="color: #fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin et enim</h4>
-                            <a href="" class="new__item--title btn">Try on it</a>
+                            <a href="" class="new__item--btn btn">Try on it</a>
                         </div>
                     </div>
                 </div>
                 <div class="new__item-2">
                     <div class="new__item--img" style="background: url(./assets/img/6.png);width: 365px; height: 365px;object-fit: cover; margin-left: 10px;">
                         <div class="new__item--content" >
-                            <h5 class="new__item--title" style="color: #fff;">
+                            <h5 class="new__item--title" >
                                 Grab & go
                             </h5>
                             <h4 class="new__item--desc" style="color: #fff;margin-bottom: 36px">Our earbuds are endorsed by GRAMMY Winning artists and audio producers.</h4>
-                            <a href="" class="new__item--title btn">Learn more</a>
+                            <a href="" class="new__item--btn btn">Learn more</a>
                         </div>
                     </i>
                 </div>
@@ -176,18 +356,18 @@
                 <div class="new__item-2">
                     <div class="new__item--img" style="background: url(./assets/img/7.png);width: 365px; height: 365px;object-fit: cover; ">
                         <div class="new__item--content">
-                            <h5 class="new__item--title" style="color: #fff">
+                            <h5 class="new__item--title" >
                                 IPx7 waterproof
                             </h5>
                             <h4 class="new__item--desc" style="color: #fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin et enim</h4>
-                            <a href="" class="new__item--title btn">Try on it</a>
+                            <a href="" class="new__item--btn btn">Try on it</a>
                         </div>
                     </div>
                 </div>
                 <div class="new__item-2">
                     <div class="new__item--img" style="background: url(./assets/img/8.png);width: 365px; height: 365px;object-fit: cover; margin-left: 10px;">
                         <div class="new__item--content" style="width:255px;top: 88%">
-                            <a href="" class="new__item--title btn btn-primary">Try on it</a>
+                            <a href="" class="new__item--btn-primary btn btn-primary">Try on it</a>
                         </div>
                     </i>
                 </div>
@@ -198,39 +378,65 @@
         <h3 class="incredible__heading">
             INCREDIBLE SOUND LOVED BY <span style="color: #00A9E1">20 million+</span> PEOPLE
         </h3>
-        <div class="up" style="cursor: pointer;">
-            <i class="fas fa-chevron-up"  style="font-size: 34px"></i>
-       </div>
-        <ul class="incredible__list">
-            <div class="left" style="margin-right: 80px; cursor: pointer;">
+        
+        <div class="incredible__content">
+            <div class="left" id="left" style="cursor: pointer;">
                 <i class="fas fa-chevron-left " style="font-size: 34px;"></i>
-           </div>
-            <li class="incredible__item" >
-                <img src="./assets/img/10.png" alt="">
-                <h4 class="incredible__title">
-                    The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
-                </h4>
-            </li>
-            <li class="incredible__item">
-                <img src="./assets/img/11.png" alt="">
-                <h4 class="incredible__title">
-                    The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
-                </h4>
-            </li>
-            <li class="incredible__item">
-                <img src="./assets/img/12.png" alt="">
-                <h4 class="incredible__title">
-                    The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
-                </h4>
-            </li>
-           <div class="right" style="cursor: pointer;">
+            </div>
+            <ul class="incredible__list">
+                <a href="">
+                    <li class="incredible__item" >
+                        <img src="./assets/img/10.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="incredible__item">
+                        <img src="./assets/img/11.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="incredible__item">
+                        <img src="./assets/img/12.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="incredible__item" >
+                        <img src="./assets/img/10.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="incredible__item">
+                        <img src="./assets/img/11.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="incredible__item">
+                        <img src="./assets/img/12.png" alt="">
+                        <h4 class="incredible__title">
+                            The Liberty Air 2 pro have been designed to sound great, even with the ANC turned on. Not all earbuds do.
+                        </h4>
+                    </li>
+                </a>
+            </ul>
+            <div class="right" id="right" style="cursor: pointer;">
                 <i class="fas fa-chevron-right " style="font-size: 34px"></i>
-           </div>
-           
-        </ul>
-        <div class="down" style="cursor: pointer;">
-            <i class="fas fa-chevron-down"  style="font-size: 34px"></i>
-       </div>
+            </div>
+        </div>
         
     </div>
     <div class="introduce">
@@ -310,27 +516,27 @@
                             <ul class="social__list">
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/facebook.png" alt="">
+                                        <i class="fab fa-facebook icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/instagram.png" alt="">
+                                        <i class="fab fa-youtube icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/twitter.png" alt="">
+                                        <i class="fab fa-twitter icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/youtube.png" alt="">
+                                        <i class="fab fa-instagram icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/spotify.png" alt="">
+                                        <i class="fab fa-spotify icon"></i>
                                     </a>
                                 </li>
                                 
@@ -338,17 +544,17 @@
                             <ul class="social__list">
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/linkedin.png" alt="">
+                                        <i class="fab fa-linkedin-in icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/soundcloud.png" alt="">
+                                        <i class="fas fa-cloud-upload-alt icon"></i>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a href="" class="social__link">
-                                        <img src="./assets/img/tiktok.png" alt="">
+                                        <i class="fab fa-tiktok icon"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -431,7 +637,7 @@
                 </li>
             </div>
         </div>
-        <div class="footer__brand">
+        <div class="footer__brand" style="cursor: pointer;">
             <span>Designed and developed by Mona Media</span>
         </div>
     </footer>
